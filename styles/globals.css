@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@layer base {
+  html {
+    font-family: "Noto Sans Ethiopic", sans-serif;
+  }
+}
+
+@layer components {
+  .custom-img {
+    background-image: url("https://i.pinimg.com/originals/29/ba/b2/29bab2e14d00f5349960d21cea79104f.jpg");
+  }
+}
