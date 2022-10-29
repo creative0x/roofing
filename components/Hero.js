@@ -9,19 +9,28 @@ export default function Hero() {
   return (
     <section className=" w-full h-screen flex justify-between items-center">
       <div
-        dangeriouslySetInnerHTML={{
-          __html: (
-            <video
-              src="../assets/bg.mp4"
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="absolute top-0 left-0 w-full h-full object-cover -z-20"
-            ></video>
-          ),
+        dangerouslySetInnerHTML={{
+          __html: `
+        <video
+          loop
+          muted
+          autoplay
+          playsinline
+          src="../assets/bg.mp4"
+          class="absolute top-0 left-0 w-full h-full object-cover -z-20"
+        />,
+      `,
         }}
       ></div>
+      {/* <video
+        src="../assets/bg.mp4"
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute top-0 left-0 w-full h-full object-cover -z-20"
+      ></video> */}
+
       <div
         className="absolute top-0 left-0 right-0 bottom-0  
       bg-gradient-radial from-transparent via-transparent to-black -z-10"
