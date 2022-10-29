@@ -8,13 +8,20 @@ import Header from "./Header";
 export default function Hero() {
   return (
     <section className=" w-full h-screen flex justify-between items-center">
-      <video
-        src="../assets/bg.mp4"
-        autoPlay
-        loop
-        muted
-        className="absolute top-0 left-0 w-full h-full object-cover -z-20"
-      ></video>
+      <div
+        dangeriouslySetInnerHTML={{
+          __html: (
+            <video
+              src="../assets/bg.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="absolute top-0 left-0 w-full h-full object-cover -z-20"
+            ></video>
+          ),
+        }}
+      ></div>
       <div
         className="absolute top-0 left-0 right-0 bottom-0  
       bg-gradient-radial from-transparent via-transparent to-black -z-10"
