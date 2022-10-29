@@ -4,8 +4,9 @@ import Hero from "../components/Hero";
 import styles from "../styles/Home.module.css";
 import Header from "../components/Header";
 import Intro from "../components/Intro";
-import Middle from "../components/Scroller";
 import Scroller from "../components/Scroller";
+import Last from "../components/Last";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -20,6 +21,8 @@ export default function Home() {
       <Hero />
       <Intro />
       <Scroller />
+      <Last />
+      <Footer />
     </div>
   );
 }

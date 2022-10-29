@@ -20,7 +20,7 @@ export default function Header() {
 
       <div>
         <CgMenu className="text-[#ffa600] text-3xl md:hidden" />
-        <ul className="hidden md:flex items-center md:space-x-10">
+        <ul className="hidden md:flex items-center md:space-x-10 font-semibold">
           <li>About </li>
           <li>Services</li>
           <li>Projects</li>

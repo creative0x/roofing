@@ -3,9 +3,8 @@ import Image from "next/image";
 
 export default function Intro() {
   return (
-    <section className="relative">
-      <hr className="border-[4px] border-[#ffa600]" />
-      <div className="absolute right-0 w-[45vw] h-screen -z-10">
+    <section className="relative border-t-8 border-[#ffa600] pt-10 md:py-0">
+      <div className="hidden md:flex absolute right-0 w-[45vw] h-screen -z-10">
         <Image
           alt=""
           layout="fill"
@@ -13,15 +12,15 @@ export default function Intro() {
           objectFit="cover"
         />
       </div>
-      <div className="bg-[orange]/70 absolute right-0 w-[45vw] h-screen"></div>
+      <div className="hidden md:flex bg-[orange]/70 absolute right-0 w-[45vw] h-screen"></div>
 
-      <div className="flex items-center h-screen">
-        <div className="w-[50vw] px-28 ">
-          <h2 className="text-4xl font-karla text-gray-800 tracking-widest font-medium ">
+      <div className="  flex flex-col items-center  md:flex-row md:items-center h-screen">
+        <div className="md:w-[50vw] px-5 md:px-28 ">
+          <h2 className="text-2xl text-center md:text-left md:text-4xl font-karla text-gray-800 tracking-widest font-semibold">
             LUXURY ROOF BUILDS AND RESTORATIONS
           </h2>
-          <hr className="w-40 border-2 bg-gray-400 border-gray-400 mt-5 mb-8" />
-          <p className="font-karla leading-10 text-xl font-medium">
+          <hr className="md:w-40  md:border-2 bg-gray-400 border-gray-400 mt-5 mb-8" />
+          <p className="text-lg sm:text-lg font-karla leading-8 md:leading-10 md:text-xl font-medium">
             Lone Star Roofing has been named one of the most influential roofing
             firms in the country based on our integration of both design and
             build. Our philosophy is to create the most detailed product to
@@ -29,11 +28,11 @@ export default function Intro() {
             construct a roof, but the real work is in the finish and we are
             dedicated to delivering the finest, sleekest product to our clients.
           </p>
-          <button className="mt-5 bg-[#ffa600] text-lg py-2 px-4 text-[#fff] font-medium tracking-widest">
+          <button className="mt-5  bg-[#ffa600] text-base md:text-lg py-1 px-2 md:py-2 md:px-4 text-[#fff] font-medium tracking-widest">
             See Our Work
           </button>
-          <div className="flex items-end flex-col  ">
-            <div className="w-[150px]">
+          <div className="hidden md:flex items-end  flex-col  ">
+            <div className="w-[150px] ">
               <Image
                 src="/assets/logo.png"
                 alt=""
@@ -47,8 +46,8 @@ export default function Intro() {
             </p>
           </div>
         </div>
-        <div className="w-[50vw] space-y-10">
-          <div className="w-[600px] h-[325px] drop-shadow-md shadow-md">
+        <div className="mt-20 md:mt-0 md-[50vw] space-y-10">
+          <div className="w-[400px] md:w-[600px] drop-shadow-md shadow-md ">
             <Image
               src="https://images.unsplash.com/photo-1602193230480-7840a38eb0c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80"
               alt=""
@@ -59,9 +58,9 @@ export default function Intro() {
             />
           </div>
 
-          <div className="w-[600px] h-[325px] drop-shadow-md shadow-md">
+          <div className="w-[400px] md:w-[600px] md:h-[325px] drop-shadow-md shadow-md">
             <Image
-              src="https://images.unsplash.com/photo-1602193230480-7840a38eb0c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80"
+              src="https://images.unsplash.com/photo-1602193069473-0c78775ec7e1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80"
               alt=""
               layout="responsive"
               width={600}
@@ -71,7 +70,7 @@ export default function Intro() {
           </div>
         </div>
       </div>
-      <hr className="border-[4px] border-[#ffa600]" />
+      {/* <hr className="border-[4px] border-[#ffa600]" /> */}
     </section>
   );
 }

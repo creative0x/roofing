@@ -28,7 +28,7 @@ export default function Hero() {
         </h3>
 
         <a href="#">
-          <button className=" bg-gradient-to-t from-orange-600  via-orange-500 to-orange-400 rounded-full py-2 px-6 md:py-2.5 md:px-8 text-sm mt-10">
+          <button className="transition duration-200 hover:scale-110 tracking-widest bg-gradient-to-t from-orange-600  via-orange-500 to-orange-400 rounded-full py-2 px-6 md:py-2.5 md:px-8 text-sm mt-10">
             Contact us
           </button>
         </a>
