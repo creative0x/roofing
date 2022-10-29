@@ -3,8 +3,8 @@ import Image from "next/image";
 
 export default function Intro() {
   return (
-    <section className="relative border-t-8 border-[#ffa600] pt-10 md:py-0">
-      <div className="hidden md:flex absolute right-0 w-[45vw] h-screen -z-10">
+    <section className="relative  border-t-8 border-[#ffa600] pt-10 md:py-0">
+      <div className="hidden md:flex absolute right-0 w-[45vw] md:h-screen -z-10">
         <Image
           alt=""
           layout="fill"
@@ -12,9 +12,9 @@ export default function Intro() {
           objectFit="cover"
         />
       </div>
-      <div className="hidden md:flex bg-[orange]/70 absolute right-0 w-[45vw] h-screen"></div>
+      <div className="hidden md:flex bg-[orange]/70 absolute right-0 w-[45vw] md:h-screen"></div>
 
-      <div className="  flex flex-col items-center  md:flex-row md:items-center h-screen">
+      <div className="  flex flex-col items-center  md:flex-row md:items-center md:h-screen">
         <div className="md:w-[50vw] px-5 md:px-28 ">
           <h2 className="text-2xl text-center md:text-left md:text-4xl font-karla text-gray-800 tracking-widest font-semibold">
             LUXURY ROOF BUILDS AND RESTORATIONS
